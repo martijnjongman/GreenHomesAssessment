@@ -12,19 +12,21 @@ const toggleMenu = () => {
 </script>
 
 <template>
-    <header class="p-6 bg-white shadow-md">
+    <header class="p-4 bg-white shadow-md">
       <nav class="hidden lg:flex max-w-desktop m-auto justify-between items-center font-title">
         <div class="flex items-center gap-4">
-            <img src="../assets/logo-light.svg" alt="logo" />
+            <router-link class="home" to="/home">
+              <img class="hover:scale-110 transition" src="../assets/logo-light.svg" alt="logo" />
+            </router-link>
     
             <ul class="flex justify-start">
-              <li class="hover:text-secondary-green cursor-pointer px-4 transition active">
-                Modulair bouwen
-              </li>
               <li class="hover:text-secondary-green cursor-pointer px-4 transition">
+                <router-link to="/">Modulair bouwen</router-link>
+              </li>
+              <li class="px-4 ">
                 Over ons
               </li>
-              <li class="hover:text-secondary-green cursor-pointer px-4 transition">
+              <li class="px-4 ">
                 Contact
               </li>
             </ul>
@@ -46,8 +48,8 @@ const toggleMenu = () => {
           <button @click="toggleMenu" class="font-title text-lg">menu</button>
         </div>
 
-        <template v-if="isMenuOpen" class="text-2xl">
-          <ul class="flex flex-col justify-start gap-10 mt-10">
+        <template v-if="isMenuOpen">
+          <ul class="flex flex-col justify-start gap-10 mt-10 text-lg">
             <li class="active">
               Modulair bouwen
             </li>
@@ -72,7 +74,7 @@ const toggleMenu = () => {
 </template>
 
 <style lang="scss">
-  .active {
+  .router-link-active:not(.home)  {
     position: relative;
 
     &::after {
