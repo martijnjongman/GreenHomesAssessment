@@ -12,13 +12,19 @@ export default {
       'grey': '#E8E8E8',
       'dark-grey': '#303030',
       'accent-purple': '#AB2857',
+      'accent-purple-hover': '#6C1C39',
       'destructive-red': '#B20A14',
+      'white': '#ffffff'
     },
     fontFamily: {
       title: ['Montserrat', 'sans-serif'],
       text: ['Nunito', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      maxWidth: {
+        'desktop': '1920px',
+      }
+    },
   },
   plugins: [],
 }
