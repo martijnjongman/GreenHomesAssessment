@@ -14,7 +14,7 @@
     .bg-textures {
         width: 100vw;
         height: 100%;
-        background-image: url('./assets/bg-textures.svg');
+        background-image: url('/bg-textures.svg');
         background-size: cover;
         background-repeat: no-repeat;
     }
