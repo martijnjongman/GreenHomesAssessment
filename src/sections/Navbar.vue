@@ -10,7 +10,7 @@
               <div class="flex flex-col lg:flex-row lg:items-center justify-between lg:flex-1 lg:ml-4">
                 <ul class="flex flex-col lg:flex-row lg:items-center justify-start gap-10 lg:gap-5 mt-10 lg:mt-0 text-lg">
                   <li class="hover:text-secondary-green cursor-pointer lg:px-4 transition">
-                  <router-link to="/">Modulair bouwen</router-link>
+                  <router-link to="/GreenHomesAssessment/">Modulair bouwen</router-link>
                   </li>
                   <li class="lg:px-4 ">
                     Over ons

@@ -3,7 +3,7 @@ import Home from './views/Home.vue';
 import Feature from './views/Feature.vue';
 
 const routes = [
-{ path: '/', component: Feature },
+{ path: '/GreenHomesAssessment', component: Feature },
   { path: '/home', component: Home },
 ];
 
