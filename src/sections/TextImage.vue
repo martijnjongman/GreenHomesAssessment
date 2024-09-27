@@ -42,7 +42,7 @@
       right: -32px;
       width: 24px;
       height: 24px;
-      background-image: url('/public/leaf.svg');
+      background-image: url('/leaf.svg');
       background-size: contain;
       background-repeat: no-repeat;
     }

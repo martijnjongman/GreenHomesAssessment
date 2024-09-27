@@ -76,7 +76,7 @@
       top: -6px;
       width: 16px;
       height: 16px;
-      background-image: url('../assets/icons/leaf.svg');
+      background-image: url('/leaf.svg');
       background-size: contain;
       background-repeat: no-repeat;
     }

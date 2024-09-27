@@ -19,8 +19,7 @@
     icon: { type: String, default: '' },
   });
 
-  const iconPath = ref<string>('');
-  iconPath.value = new URL(`/public/${props.icon}.svg`, import.meta.url).href;
+  const iconPath = ref<string>(`/GreenHomesAssessment/${props.icon}.svg`);
 </script>
 
 <style lang="scss">

@@ -15,7 +15,7 @@
 
             <div class="relative flex flex-col items-center">
                 <div class="relative image-container w-full">
-                    <img class="object-cover image-container w-full h-full rounded-xl" src="/public/hero-image.jpg" />
+                    <img class="object-cover image-container w-full h-full rounded-xl" src="/hero-image.jpg" />
 
                     <div class="tooltip1 absolute hidden lg:flex">
                         <Tooltip>Bepaal zelf welke type woning je wilt hebben.</Tooltip>

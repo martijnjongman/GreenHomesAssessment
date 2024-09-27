@@ -23,8 +23,8 @@
 
     const isHovered = ref(false);
 
-    const defaultIcon = '/GreenHomesAssessment/public/popup-plus.svg';
-    const hoverIcon = '/GreenHomesAssessment/public/popup-min.svg';
+    const defaultIcon = '/GreenHomesAssessment/popup-plus.svg';
+    const hoverIcon = '/GreenHomesAssessment/popup-min.svg';
 
     const iconPath = computed(() => isHovered.value ? hoverIcon : defaultIcon);
 </script>
