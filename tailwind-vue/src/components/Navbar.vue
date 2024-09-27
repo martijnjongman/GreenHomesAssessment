@@ -1,74 +1,67 @@
 <script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 import ReviewRating from "../components/ReviewRating.vue";
 import Button from "../components/Button.vue";
-
-import { ref } from 'vue';
 
 const isMenuOpen = ref(false);
 
 const toggleMenu = () => {
     isMenuOpen.value = !isMenuOpen.value;
 };
+
+const checkViewport = () => {
+    if (window.innerWidth >= 1024) {
+        isMenuOpen.value = true;
+    } else {
+        isMenuOpen.value = false;
+    }
+};
+
+onMounted(() => {
+    checkViewport();
+  
+    window.addEventListener('resize', checkViewport);
+});
+
+onBeforeUnmount(() => {
+    window.removeEventListener('resize', checkViewport);
+});
 </script>
 
 <template>
     <header class="p-4 bg-white shadow-md">
-      <nav class="hidden lg:flex max-w-desktop m-auto justify-between items-center font-title">
-        <div class="flex items-center gap-4">
+      <nav class="flex max-w-desktop m-auto justify-between items-start lg:items-center w-full">
+          <div class="flex flex-col lg:flex-row lg:items-center w-full">
             <router-link class="home" to="/home">
               <img class="hover:scale-110 transition" src="../assets/logo-light.svg" alt="logo" />
             </router-link>
-    
-            <ul class="flex justify-start">
-              <li class="hover:text-secondary-green cursor-pointer px-4 transition">
-                <router-link to="/">Modulair bouwen</router-link>
-              </li>
-              <li class="px-4 ">
-                Over ons
-              </li>
-              <li class="px-4 ">
-                Contact
-              </li>
-            </ul>
-        </div>
 
-        <div class="flex items-center gap-4">
-            <ReviewRating />
-
-            <Button variant="primary" icon="arrow-right">
-                Vraag offerte aan
-            </Button>
-        </div>
-      </nav>
-
-      <nav class="lg:hidden">
-        <div class="flex justify-between">
-          <img src="../assets/logo-light.svg" alt="logo" />
-
-          <button @click="toggleMenu" class="font-title text-lg">menu</button>
-        </div>
-
-        <template v-if="isMenuOpen">
-          <ul class="flex flex-col justify-start gap-10 mt-10 text-lg">
-            <li class="active">
-              Modulair bouwen
-            </li>
-            <li>
-              Over ons
-            </li>
-            <li>
-              Contact
-            </li>
-          </ul>
-
-          <div class="flex flex-col gap-4 mt-20">
-              <ReviewRating />
-
-              <Button variant="primary" icon="arrow-right">
-                  Vraag offerte aan
-              </Button>
+            <template v-if="isMenuOpen">
+              <div class="flex flex-col lg:flex-row lg:items-center justify-between lg:flex-1">
+                <ul class="flex flex-col lg:flex-row lg:items-center justify-start gap-10 lg:gap-5 mt-10 lg:mt-0 text-lg">
+                  <li class="hover:text-secondary-green cursor-pointer lg:px-4 transition">
+                  <router-link to="/">Modulair bouwen</router-link>
+                  </li>
+                  <li class="lg:px-4 ">
+                    Over ons
+                  </li>
+                  <li class="lg:px-4 ">
+                    Contact
+                  </li>
+                </ul>
+  
+                <div class="flex flex-col lg:items-center lg:flex-row gap-4 mt-20 lg:mt-0">
+                    <ReviewRating />
+  
+                    <Button variant="primary" icon="arrow-right">
+                        Vraag offerte aan
+                    </Button>
+                </div>
+              </div>
+            </template>
           </div>
-        </template>
+
+          <button @click="toggleMenu" class="lg:hidden font-title text-lg mt-2">menu</button>
       </nav>
     </header>
 </template>
