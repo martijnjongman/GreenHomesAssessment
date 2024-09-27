@@ -1,9 +1,21 @@
+<template>
+    <div class="bg-textures">
+        <NavBar />
+      
+        <router-view />
+    </div>
+</template>
+
 <script setup>
-    import NavBar from "./components/NavBar.vue";
+    import NavBar from "./sections/Navbar.vue";
 </script>
 
-<template>
-    <NavBar />
-  
-    <router-view />
-</template>
+<style lang="scss">
+    .bg-textures {
+        width: 100vw;
+        height: 100%;
+        background-image: url('./assets/bg-textures.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>

@@ -10,6 +10,7 @@ export default {
       'secondary-green': '#38B671',
       'light-green': '#B9DFCA',
       'grey': '#E8E8E8',
+      'grey-hover': '#B7B7B7',
       'dark-grey': '#303030',
       'accent-purple': '#AB2857',
       'accent-purple-hover': '#6C1C39',
@@ -23,6 +24,9 @@ export default {
     extend: {
       maxWidth: {
         'desktop': '1920px',
+      },
+      fontSize: {
+        full: '9vw',
       }
     },
   },

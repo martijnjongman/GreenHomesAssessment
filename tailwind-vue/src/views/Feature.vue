@@ -1,3 +1,8 @@
-<template>    
-    <h1>Feature</h1>
+<template>
+    <HeroFeature />
+ 
 </template>
+
+<script setup>
+    import HeroFeature from "../sections/HeroFeature.vue";
+</script>

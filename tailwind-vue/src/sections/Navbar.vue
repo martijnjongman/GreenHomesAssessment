@@ -1,35 +1,5 @@
-<script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
-import ReviewRating from "../components/ReviewRating.vue";
-import Button from "../components/Button.vue";
-
-const isMenuOpen = ref(false);
-
-const toggleMenu = () => {
-    isMenuOpen.value = !isMenuOpen.value;
-};
-
-const checkViewport = () => {
-    if (window.innerWidth >= 1024) {
-        isMenuOpen.value = true;
-    } else {
-        isMenuOpen.value = false;
-    }
-};
-
-onMounted(() => {
-    checkViewport();
-  
-    window.addEventListener('resize', checkViewport);
-});
-
-onBeforeUnmount(() => {
-    window.removeEventListener('resize', checkViewport);
-});
-</script>
-
 <template>
-    <header class="p-4 bg-white shadow-md">
+    <header class="absolute p-4 bg-white shadow-md w-screen">
       <nav class="flex max-w-desktop m-auto justify-between items-start lg:items-center w-full">
           <div class="flex flex-col lg:flex-row lg:items-center w-full">
             <router-link class="home" to="/home">
@@ -37,7 +7,7 @@ onBeforeUnmount(() => {
             </router-link>
 
             <template v-if="isMenuOpen">
-              <div class="flex flex-col lg:flex-row lg:items-center justify-between lg:flex-1">
+              <div class="flex flex-col lg:flex-row lg:items-center justify-between lg:flex-1 lg:ml-4">
                 <ul class="flex flex-col lg:flex-row lg:items-center justify-start gap-10 lg:gap-5 mt-10 lg:mt-0 text-lg">
                   <li class="hover:text-secondary-green cursor-pointer lg:px-4 transition">
                   <router-link to="/">Modulair bouwen</router-link>
@@ -65,6 +35,36 @@ onBeforeUnmount(() => {
       </nav>
     </header>
 </template>
+
+<script setup>
+  import { ref, onMounted, onBeforeUnmount } from 'vue';
+  import ReviewRating from "../components/ReviewRating.vue";
+  import Button from "../components/Button.vue";
+
+  const isMenuOpen = ref(false);
+
+  const toggleMenu = () => {
+      isMenuOpen.value = !isMenuOpen.value;
+  };
+
+  const checkViewport = () => {
+      if (window.innerWidth >= 1024) {
+          isMenuOpen.value = true;
+      } else {
+          isMenuOpen.value = false;
+      }
+  };
+
+  onMounted(() => {
+      checkViewport();
+    
+      window.addEventListener('resize', checkViewport);
+  });
+
+  onBeforeUnmount(() => {
+      window.removeEventListener('resize', checkViewport);
+  });
+</script>
 
 <style lang="scss">
   .router-link-active:not(.home)  {
