@@ -23,8 +23,8 @@
 
     const isHovered = ref(false);
 
-    const defaultIcon = '../assets/icons/popup-plus.svg';
-    const hoverIcon = '../assets/icons/popup-min.svg';
+    const defaultIcon = '../assets/popup-plus.svg';
+    const hoverIcon = '../assets/popup-min.svg';
 
     const iconPath = computed(() => {
         return new URL(isHovered.value ? hoverIcon : defaultIcon, import.meta.url).href;

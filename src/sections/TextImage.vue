@@ -1,8 +1,8 @@
 <template>
-    <section class="max-w-screen-2xl m-auto px-2 mb-20 lg:mb-40">
+    <section class="max-w-screen-2xl m-auto px-4 mb-20 lg:mb-40">
         <div :class="['flex flex-col lg:flex-row gap-6 lg:gap-32 justify-between', props.variant === 'reversed' ? 'lg:flex-row-reverse' : '']">
             <div class="flex flex-col px-2">
-                <h2 class="relative w-fit text-2xl lg:text-4xl font-title font-bold mb-4">{{ props.title }}</h2>
+                <h2 class="relative mr-6 text-2xl lg:text-4xl font-title font-bold mb-4">{{ props.title }}</h2>
 
                 <p class="font-text leading-8 mb-4">
                     {{ props.text }}
