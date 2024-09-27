@@ -31,7 +31,7 @@
     });
 
     const imagePath = ref<string>('');
-    imagePath.value = new URL(`../assets/${props.image}.jpg`, import.meta.url).href;
+    imagePath.value = new URL(`/public/${props.image}.jpg`, import.meta.url).href;
 </script>
 
 <style lang="scss" scoped>
@@ -42,7 +42,7 @@
       right: -32px;
       width: 24px;
       height: 24px;
-      background-image: url('../assets/icons/leaf.svg');
+      background-image: url('/public/leaf.svg');
       background-size: contain;
       background-repeat: no-repeat;
     }

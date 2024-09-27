@@ -23,12 +23,10 @@
 
     const isHovered = ref(false);
 
-    const defaultIcon = '../assets/popup-plus.svg';
-    const hoverIcon = '../assets/popup-min.svg';
+    const defaultIcon = '/GreenHomesAssessment/public/popup-plus.svg';
+    const hoverIcon = '/GreenHomesAssessment/public/popup-min.svg';
 
-    const iconPath = computed(() => {
-        return new URL(isHovered.value ? hoverIcon : defaultIcon, import.meta.url).href;
-    });
+    const iconPath = computed(() => isHovered.value ? hoverIcon : defaultIcon);
 </script>
 
 <style scoped>

@@ -20,7 +20,7 @@
   });
 
   const iconPath = ref<string>('');
-  iconPath.value = new URL(`../assets/icons/${props.icon}.svg`, import.meta.url).href;
+  iconPath.value = new URL(`/public/${props.icon}.svg`, import.meta.url).href;
 </script>
 
 <style lang="scss">

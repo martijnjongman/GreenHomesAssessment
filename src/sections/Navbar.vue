@@ -3,7 +3,7 @@
       <nav class="flex max-w-desktop m-auto justify-between items-start lg:items-center w-full">
           <div class="flex flex-col lg:flex-row lg:items-center w-full">
             <router-link class="home" to="/home">
-              <img class="hover:scale-110 transition" src="../assets/logo-light.svg" alt="logo" />
+              <img class="hover:scale-110 transition" src="/public/logo-light.svg" alt="logo" />
             </router-link>
 
             <template v-if="isMenuOpen">
