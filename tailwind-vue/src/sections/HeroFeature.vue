@@ -1,5 +1,5 @@
 <template>
-    <section class="max-w-screen-2xl m-auto px-2 pt-20">
+    <section class="max-w-screen-2xl m-auto mb-20 lg:mb-40 px-2 pt-20">
         <div class="hidden lg:flex gap-2 py-4 font-title text-sm">
             <router-link class="home hover:text-secondary-green transition" to="/home">Home</router-link>
             -
@@ -36,7 +36,7 @@
                     <p class="font-text text-sm lg:text-base leading-6">Ben jij opzoek naar je nieuwe starterswoning? Bekijk de mogelijkheden van <span class="text-secondary-green font-bold">modulaire ontwerpen</span> en <span class="text-secondary-green font-bold">duurzame</span> woningen</p>
 
                     <div class="flex flex-col lg:flex-row gap-2 items-center">
-                        <Button variant="primary" icon="arrow-right">
+                        <Button variant="accent" icon="arrow-right">
                             Vraag offerte aan
                         </Button>
 

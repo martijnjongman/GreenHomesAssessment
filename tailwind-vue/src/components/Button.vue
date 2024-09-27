@@ -2,7 +2,7 @@
     <button
     :class="[
       'flex items-center justify-center w-full lg:w-fit px-6 py-3 rounded-lg font-bold text-sm transition bg-grey hover:bg-grey-hover text-dark-grey text-nowrap', 
-      props.variant === 'primary' ? 'primary' || 'secondary' : ''
+      (props.variant === 'accent' || props.variant === 'green') ? props.variant : ''
     ]"
     >
       <slot></slot>
@@ -24,12 +24,12 @@
 </script>
 
 <style lang="scss">
-    .primary {
+    .accent {
         @apply bg-accent-purple hover:bg-accent-purple-hover text-white
     }
 
-    .secondary {
-        @apply text-accent-purple hover:bg-grey text-accent-purple
+    .green {
+        @apply bg-primary-green hover:bg-primary-green-hover text-white
     }
 </style>
 

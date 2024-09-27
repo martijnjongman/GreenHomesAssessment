@@ -7,6 +7,7 @@ export default {
   theme: {
     colors: {
       'primary-green': '#234F37',
+      'primary-green-hover': '#0B1B12',
       'secondary-green': '#38B671',
       'light-green': '#B9DFCA',
       'grey': '#E8E8E8',

@@ -23,7 +23,7 @@
                 <div class="flex flex-col lg:items-center lg:flex-row gap-4 mt-20 lg:mt-0">
                     <ReviewRating />
   
-                    <Button variant="primary" icon="arrow-right">
+                    <Button variant="accent" icon="arrow-right">
                         Vraag offerte aan
                     </Button>
                 </div>
