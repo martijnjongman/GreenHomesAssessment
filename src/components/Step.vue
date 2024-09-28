@@ -10,7 +10,7 @@
 
             <p>{{ props.text }}</p>
 
-            <img :class="['hidden absolute -bottom-2 right-2 w-12 h-12', props.step === 4 ? 'group-hover:hidden' : 'group-hover:block']" src="/public/arrow-right-round.svg/" alt="icon"/>
+            <img :class="['hidden absolute -bottom-2 right-2 w-12 h-12 opacity-20', props.step === 4 ? 'group-hover:hidden' : 'group-hover:block']" src="/public/arrow-right-round.svg/" alt="icon"/>
     </div>  
 </template>
 

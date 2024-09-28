@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <section class="max-w-screen-2xl m-auto px-4 mb-20 lg:mb-80">
+    <section class="max-w-screen-2xl m-auto px-4 mb-60 lg:mb-80">
         <div class="flex flex-col">
             <h2 class="text-2xl lg:text-4xl font-title font-bold mb-4">Stappenplan</h2>
 
