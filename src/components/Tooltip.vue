@@ -10,7 +10,7 @@
       <transition name="fade">
         <div 
           v-if="isHovered" 
-          class="popup-content absolute text-dark-grey bg-white py-3 px-4 shadow-lg rounded left-16 font-text w-max max-w-48"
+          class="popup-content absolute text-dark-grey bg-white py-3 px-4 shadow-lg rounded-lg left-16 font-text w-max max-w-48"
         >
           <slot></slot>
         </div>

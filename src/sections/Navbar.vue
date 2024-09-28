@@ -1,5 +1,5 @@
 <template>
-    <header class="absolute p-4 bg-white shadow-md w-screen">
+    <header class="z-10 fixed p-4 bg-white shadow-md w-screen">
       <nav class="flex max-w-desktop m-auto justify-between items-start lg:items-center w-full">
           <div class="flex flex-col lg:flex-row lg:items-center w-full">
             <router-link class="home" to="/home">
@@ -8,7 +8,7 @@
 
             <template v-if="isMenuOpen">
               <div class="flex flex-col lg:flex-row lg:items-center justify-between lg:flex-1 lg:ml-4">
-                <ul class="flex flex-col lg:flex-row lg:items-center justify-start gap-10 lg:gap-5 mt-10 lg:mt-0 text-lg">
+                <ul class="flex flex-col lg:flex-row lg:items-center justify-start gap-10 lg:gap-5 mt-10 lg:mt-0 font-title">
                   <li class="hover:text-secondary-green cursor-pointer lg:px-4 transition">
                   <router-link to="/GreenHomesAssessment/">Modulair bouwen</router-link>
                   </li>

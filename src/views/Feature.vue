@@ -17,9 +17,12 @@
         image="house"
         variant="reversed"
     />
+
+    <HouseTypes />
 </template>
 
 <script setup>
     import HeroFeature from "../sections/HeroFeature.vue";
+    import HouseTypes from "../sections/HouseTypes.vue";
     import TextImage from "../sections/TextImage.vue";
 </script>

@@ -30,17 +30,19 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-4 bg-white shadow-md mt-5 p-4 lg:p-8 rounded-xl max-w-sm md:absolute md:bottom-6">
+                <div class="flex flex-col gap-4 bg-white lg:shadow-md mt-5 p-4 lg:p-8 rounded-xl max-w-sm md:absolute md:bottom-6">
                     <h1 class="font-bold text-3xl font-title">Stel jouw nieuwe woning samen!</h1>
 
                     <p class="font-text text-sm lg:text-base leading-6">Ben jij opzoek naar je nieuwe starterswoning? Bekijk de mogelijkheden van <span class="text-secondary-green font-bold">modulaire ontwerpen</span> en <span class="text-secondary-green font-bold">duurzame</span> woningen</p>
 
-                    <div class="flex flex-col lg:flex-row gap-2 items-center">
+                    <div class="flex flex-col lg:flex-row gap-4 items-center">
                         <Button variant="accent" icon="arrow-right">
                             Vraag offerte aan
                         </Button>
 
-                        <span>of lees verder</span>
+                        <span class="opacity-50 font-title text-sm">of</span>
+
+                        <a href="#inpage" class="text-accent-purple font-title text-sm hover:underline text-nowrap">Lees verder</a>
                     </div>
                 </div>
             </div>
