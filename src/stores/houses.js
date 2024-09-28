@@ -5,27 +5,33 @@ export const useHouseStore = defineStore('houses', () => {
     const houses = ref([
       {
         name: 'Standaard huis',
-        type: '2-onder-1 kap'
+        type: '2-onder-1 kap',
+        image: 'house1.jpg'
       },
       {
         name: 'Gezinswoning',
-        type: 'Gezinswoning'
+        type: 'Gezinswoning',
+        image: 'house2.jpg'
       },
       {
         name: 'Mini tiny house',
-        type: 'Kleine woning'
+        type: 'Kleine woning',
+        image: 'house3.jpg'
       },
       {
         name: 'Tiny house',
-        type: 'Kleine woning'
+        type: 'Kleine woning',
+        image: 'house4.jpg'
       },
       {
         name: 'Grote woning',
-        type: 'Gezinswoning'
+        type: 'Gezinswoning',
+        image: 'house5.jpg'
       },
       {
         name: 'Vrijstaand huis',
-        type: 'Gezinswoning'
+        type: 'Gezinswoning',
+        image: 'house6.jpg'
       }
     ])
 
