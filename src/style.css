@@ -6,4 +6,12 @@
     html {
       font-family: "Nunito", system-ui, sans-serif;
     }
+
+    p {
+      @apply leading-7
+    }
+
+    * {
+      @apply transition
+    }
 }

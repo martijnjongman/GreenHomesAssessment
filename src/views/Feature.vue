@@ -19,10 +19,13 @@
     />
 
     <HouseTypes />
+
+    <Steps />
 </template>
 
 <script setup>
     import HeroFeature from "../sections/HeroFeature.vue";
     import HouseTypes from "../sections/HouseTypes.vue";
+    import Steps from "../sections/Steps.vue";
     import TextImage from "../sections/TextImage.vue";
 </script>

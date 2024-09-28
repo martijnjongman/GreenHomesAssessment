@@ -1,5 +1,5 @@
 <template>
-    <section class="max-w-screen-2xl m-auto px-4 mb-20 lg:mb-40">
+    <section class="relative max-w-screen-2xl m-auto px-4 mb-20 lg:mb-40">
         <div class="flex flex-col max-w-2xl mb-10">
             <h2 class="relative w-fit mr-6 text-2xl lg:text-4xl font-title font-bold mb-4">Start met het samenstellen van jouw woning!</h2>
 
@@ -41,6 +41,10 @@
                     />
                 </div>
             </div>
+        </div>
+
+        <div class="-z-10 hidden lg:flex absolute -left-40 top-0">
+            <img src="/leaf-xl.svg">
         </div>
     </section>
 </template>
