@@ -10,7 +10,7 @@
 
 <script setup>
     import Footer from "./sections/Footer.vue";
-import NavBar from "./sections/Navbar.vue";
+    import NavBar from "./sections/Navbar.vue";
 </script>
 
 <style lang="scss">
