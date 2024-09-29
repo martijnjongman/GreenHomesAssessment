@@ -9,7 +9,7 @@
 </script>
 
 <template>
-    <section class="max-w-screen-2xl m-auto mb-20 lg:mb-40">
+    <section id="veelgestelde vragen" class="max-w-screen-2xl m-auto mb-20 lg:mb-40">
         <div class="bg-grey rounded-lg p-8 lg:p-16">
             <h2 class="text-2xl lg:text-4xl font-title font-bold mb-4">Veelgestelde vragen</h2>
 

@@ -23,12 +23,15 @@
     <Steps />
 
     <FAQSection />
+
+    <FormSection />
 </template>
 
 <script setup>
     import FAQSection from "../sections/FAQSection.vue";
-import HeroFeature from "../sections/HeroFeature.vue";
+    import HeroFeature from "../sections/HeroFeature.vue";
     import HouseTypes from "../sections/HouseTypes.vue";
     import Steps from "../sections/Steps.vue";
     import TextImage from "../sections/TextImage.vue";
+    import FormSection from "../sections/FormSection.vue";
 </script>

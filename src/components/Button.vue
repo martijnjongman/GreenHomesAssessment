@@ -2,7 +2,7 @@
     <button
     :class="[
       'flex items-center justify-center w-full lg:w-fit px-6 py-3 rounded-lg font-bold text-sm transition bg-grey hover:bg-grey-hover text-dark-grey text-nowrap', 
-      (props.variant === 'accent' || props.variant === 'green') ? props.variant : ''
+      props.variant
     ]"
     >
       <slot></slot>
@@ -25,6 +25,10 @@
 <style lang="scss">
     .accent {
         @apply bg-accent-purple hover:bg-accent-purple-hover text-white
+    }
+
+    .secondary-accent {
+        @apply bg-white text-accent-purple
     }
 
     .green {

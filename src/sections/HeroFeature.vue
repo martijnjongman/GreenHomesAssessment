@@ -42,7 +42,10 @@
 
                         <span class="opacity-50 font-title text-sm">of</span>
 
-                        <a href="#inpage" class="text-accent-purple font-title text-sm hover:underline text-nowrap">Lees verder</a>
+                        <div class="flex gap-1 items-center">
+                            <a href="#inpage" class="font-title text-sm hover:underline text-nowrap">Lees verder</a>
+                            <img class="w-3 h-3 " src="/arrow-down.svg" alt="icon" />
+                        </div>
                     </div>
                 </div>
             </div>
