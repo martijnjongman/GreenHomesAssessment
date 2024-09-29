@@ -3,11 +3,14 @@
         <NavBar />
       
         <router-view />
+
+        <Footer />
     </div>
 </template>
 
 <script setup>
-    import NavBar from "./sections/Navbar.vue";
+    import Footer from "./sections/Footer.vue";
+import NavBar from "./sections/Navbar.vue";
 </script>
 
 <style lang="scss">

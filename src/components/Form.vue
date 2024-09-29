@@ -2,9 +2,9 @@
     <div class="p-8 bg-accent-purple text-white rounded-xl max-w-xl w-full">
         <h3 class="font-bold font-title text-2xl mb-4 text">Offerte aanvragen</h3>
 
-        <p v-if="submitted" class="text-green-500 font-semibold">Offerte succesvol verzonden!</p>
+        <p v-if="submitted" class="text-green-500 font-semibold flex justify-center items-center w-full h-96">Offerte succesvol verzonden!</p>
 
-        <form v-else @submit.prevent="handleSubmit" class="space-y-4 flex flex-col items-center">
+        <form v-else @submit.prevent="handleSubmit" class="space-y-10 flex flex-col items-center">
             <div class="w-full">
                 <label class="block text-sm font-medium text-gray-700">Name</label>
                 <input

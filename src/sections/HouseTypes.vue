@@ -43,7 +43,7 @@
             </div>
         </div>
 
-        <div class="-z-10 hidden lg:flex absolute -left-40 bottom-40">
+        <div class="-z-10 hidden lg:flex absolute -left-40 top-0">
             <img src="/leaf-xl.svg">
         </div>
     </section>
